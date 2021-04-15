@@ -1,0 +1,22 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+bases:
+- ../../../manifests/apps/backend/base
+
+resources:
+- namespace.yaml
+
+patchesJson6902:
+- target:
+    group: apps.openshift.io
+    version: v1
+    kind: DeploymentConfig
+    name: backend
+  path: patch-deploymentconfig.yaml
+
+- target:
+    version: v1
+    kind: ConfigMap
+    name: backend-cm
+  path: patch-cm.yaml

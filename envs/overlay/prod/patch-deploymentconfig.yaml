@@ -1,0 +1,7 @@
+- op: replace
+  path: /spec/template/spec/containers/0/image
+  value: quay.io/kashukla/quarkus@sha256:dc10f8acf9df30df9832c804edbf8e394b9829e87a4ff55c9b67d96724eaeedc
+
+- op: replace
+  path: /spec/replicas
+  value: 3

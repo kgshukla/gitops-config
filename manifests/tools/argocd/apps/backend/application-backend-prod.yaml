@@ -1,0 +1,18 @@
+﻿apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: backend-prod
+  namespace: argocd
+spec:
+  destination:
+    namespace: backend-prod
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    path: cluster/overlay/prod
+    repoURL: 'https://github.com/kgshukla/gitops.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true

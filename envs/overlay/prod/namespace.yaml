@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: Prod  project for hosting backend application
+    openshift.io/display-name: backend app prod
+  labels:
+    name: backend-prod
+  name: backend-prod

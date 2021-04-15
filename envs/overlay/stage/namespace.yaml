@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    openshift.io/description: Stage project for hosting backend application
+    openshift.io/display-name: backend app staging
+  labels:
+    name: backend-staging
+  name: backend-staging

@@ -1,0 +1,3 @@
+- op: add
+  path: /spec/host
+  value: backend-stage.2886795274-80-hazel04.environments.katacoda.com
