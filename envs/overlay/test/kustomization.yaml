@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 bases:
-- ../../../manifests/apps/backend/base
+  - https://github.com/kgshukla/gitops-config/manifests/apps/backend/base?ref=23a2b43
 
 resources:
 - namespace.yaml
