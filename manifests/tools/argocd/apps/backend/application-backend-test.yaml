@@ -2,7 +2,7 @@
 kind: Application
 metadata:
   name: backend-test
-  namespace: argocd
+  namespace: gitops-operator
 spec:
   destination:
     namespace: backend-test
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: cluster/overlay/test
-    repoURL: 'https://github.com/kgshukla/gitops.git'
+    repoURL: 'https://github.com/kgshukla/gitops-config.git'
     targetRevision: HEAD
   syncPolicy:
     automated:
