@@ -1,3 +1,3 @@
 - op: add
   path: /spec/host
-  value: backend-test.apps.cluster-h6fc7.h6fc7.sandbox1575.opentlc.com
+  value: backend-test.2886795273-443-hazel04.environments.katacoda.com
