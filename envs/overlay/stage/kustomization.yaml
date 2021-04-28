@@ -1,8 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+namespace: backend-staging
 
 bases:
-- https://github.com/kgshukla/gitops-config/manifests/apps/backend/base?ref=23a2b43
+- ../../../manifests/apps/backend/base
 
 resources:
 - namespace.yaml
