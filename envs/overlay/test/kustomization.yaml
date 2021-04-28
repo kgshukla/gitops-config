@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: backend-test
 
 bases:
-  - ../../../manifests/apps/backend/base
+  - https://github.com/kgshukla/gitops-config/manifests/apps/backend/base?ref=23a2b43
 
 resources:
 - namespace.yaml
